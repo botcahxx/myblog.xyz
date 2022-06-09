@@ -1,6 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+<title>Clock</title>
+</head>
+<body>
+ 
+	<style>
+	h1,h2,p,a{
+		font-family: sans-serif;
+		font-weight: normal;
+	}
+ 
+	.jam-digital {
+		overflow: hidden;
+		width: 330px;
+		margin: 20px auto;
+		border: 5px solid #efefef;
+	}
+	.kotak{
+		float: left;
+		width: 110px;
+		height: 100px;
+		background-color: #189fff;
+	}
+	.jam-digital p {
+		color: #fff;
+		font-size: 36px;
+		text-align: center;
+		margin-top: 30px;
+	}
+ 
+ 
+</style>
+ 
+<center>
+	<h1>TioDevBlog</h1>
+	<h2>Website Blog</h2>
+</center>
+ 
+<div class="jam-digital">
+	<div class="kotak">
+		<p id="jam"></p>
+	</div>
+	<div class="kotak">
+		<p id="menit"></p>
+	</div>
+	<div class="kotak">
+		<p id="detik"></p>
+	</div>
+</div>
+ 
+<center>
+	<a href="https://myblogxyz.netlify.app/">Beranda</a>
+</center>
+ 
+<script>
+	window.setTimeout("waktu()", 1000);
+ 
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+</script>
+</body>
+</html>
   <audio autoplay="true" src="audiovisual/Naruto-Sadness-and-Sorrow-Piano-Version_Kk60F8a7-Jw.mp3"></audio>
   <meta charset="UTF-8">
     <title>Beranda</title>
