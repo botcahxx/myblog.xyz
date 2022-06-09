@@ -39,7 +39,7 @@ nav li a{
     color:#ffffff;
     text-align: center;
     padding: 14px 15px;
-    text-decoration: sans-serif;
+    text-decoration: none;
 }
 
 nav li a:hover {
